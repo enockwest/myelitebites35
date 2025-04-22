@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite Bites Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Elite Bites | Gourmet Meals Delivered Fresh">
+  <meta name="description" content="Elite Bites delivers handcrafted, chef-prepared meals right to your door. Fresh, healthy, and absolutely delicious. Discover your new favorite meal today!">
+  <meta name="keywords" content="Elite Bites, gourmet meals, food delivery,Enocks bites, Enocks demo bites">
+  <meta name="Enock West" content="Elite Bites Team">
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Elite Bites</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-slider">
+    <div class="hero-slide active" style="background-image: url('pies.jpeg');"></div>
+    <div class="hero-slide" style="background-image: url('mocroon.jpeg');"></div>
+    <div class="hero-slide" style="background-image: url('crab.jpeg');"></div>
+  </section>
+
+  <main>
+    <section id="about" class="twocol">
+      <div>
+        <h2>About Us</h2>
+        <p>Elite Bites is a premium dining spot in Kampala offering international and Ugandan cuisine in a luxurious setting.</p>
+      </div>
+      <img src="ca2.jpeg" alt="About Elite Bites"/>
+    </section>
+
+    <section id="menu" class="scrollable-menu">
+      <h2>Our Menu</h2>
+      <div class="menu-gallery">
+        <img src="mocroon.jpeg" alt="Dish 1"/>
+        <img src="vanilla bean.jpeg" alt="Dish 2"/>
+        <img src="crab.jpeg" alt="Dish 3"/>
+      </div>
+    </section>
+
+    <section id="services" class="twocol">
+      <div>
+        <h2>Services</h2>
+        <ul>
+          <li>Dine-in and outdoor seating</li>
+          <li>Event hosting and catering</li>
+          <li>Online reservations and delivery</li>
+        </ul>
+      </div>
+      <img src="images (5).jpeg" alt="Services"/>
+    </section>
+
+    <section id="facilities" class="twocol">
+      <img src="a5.jpeg" alt="Facilities"/>
+      <div>
+        <h2>Facilities</h2>
+        <ul>
+          <li>Private VIP lounges</li>
+          <li>Kids’ play area</li>
+          <li>Wi-Fi and valet parking</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="twocol">
+      <div>
+        <h2>Contact</h2>
+        <p>Phone: +256 701 234567<br>Email: info@elitebites.ug<br>Instagram: @elitebiteskampala</p>
+      </div>
+      <img src="dog.jpeg" alt="Contact"/>
+    </section>
+
+    <section id="location">
+      <h2>Location</h2>
+      <p>Plot 88, Bukoto Street, Kampala<br>Open: 10 AM - Midnight</p>
+      <iframe src="https://www.google.com/maps?q=bukoto+kampala&output=embed" width="100%" height="300" style="border:0;"></iframe>
+    </section>
+  </main>
+
+  <script src=""> 
+  alert("This website is for Clients");
+  const slides = document.querySelectorAll('.hero-slide');
+let index = 0;
+
+function changeSlide() {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (i === index) slide.classList.add('active');
+  });
+  index = (index + 1) % slides.length;
+}
+
+setInterval(changeSlide, 4000);
+  </script>
+</body>
+</html>
